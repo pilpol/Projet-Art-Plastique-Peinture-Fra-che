@@ -14,3 +14,5 @@ Explications:
 Chaque 0.1 a 15 secondes qui passent, de la peinture (texte qui dit "Peinture" de couleur aléatoire) sera appliqué sur le mur (terminal), mais parfois,
 un message perturbera cette peinture ("Vous regardez encore ?")
 Pour moi, le "Vous regardez encore ?" me permet de donner mon avis sur ce type de projets artistique, est-ce vraiment de l'art ? ou juste une répétition.
+
+/!\ il faut colorama pour que le projet affiche toute ses couleurs
