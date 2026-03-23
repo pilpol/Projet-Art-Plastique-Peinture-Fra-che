@@ -9,7 +9,7 @@
 #|  ___|  _ \    / \  |_ _/ ___| | | | ____|    
 #| |_  | |_) |  / _ \  | | |   | |_| |  _|      
 #|  _| |  _ <  / ___ \ | | |___|  _  | |___     
-#|_|   |_| \/_/   \_\___\____|_| |_|_____|
+#|_|   |_| \/_/     \_\___\____|_| |_|_____|
 
 
 import os
@@ -66,7 +66,7 @@ def vortex_eye():
         center_row = size.lines // 2
         center_col = size.columns // 2
 
-        # spirale trop har
+        # spirale trop harr
         for t in range(60):
             angle = t * 0.3
             radius = t * 0.25
@@ -88,7 +88,7 @@ def vortex_eye():
             if start_row + i <= size.lines:
                 print(f"\033[{start_row+i};{start_col}H{random_rgb()}{line}{reset}", end="", flush=True)
     except Exception as e:
-        pass  # Silently continue on error
+        pass  # si ya une erreur
 
 def vortex():
     try:
@@ -112,7 +112,7 @@ def vortex():
 
             time.sleep(0.01)
     except Exception as e:
-        pass  # Silently continue on error
+        pass  # si ya une erreur
 
 def random_rgb():
     r = secrets.randbelow(256)
@@ -127,7 +127,7 @@ def random_position():
         col = secrets.randbelow(max(1, size.columns - 40)) + 1
         return clamp(row, 1, size.lines), clamp(col, 1, size.columns - 40)
     except Exception:
-        return 10, 10  # Fallback position
+        return 10, 10  # position pr fallback
 
 def mutate(msg):
     if len(msg) == 0: 
@@ -193,6 +193,6 @@ try:
             time.sleep(0.1)
 except KeyboardInterrupt:
     # ct,c pour enlever
-    print("\033[?25h")  # Show cursor again
-    print(f"\nPeinture finie.")
+    print("\033[?25h")  # remets le curseur
+    print(f"\Peinture finie.")
     sys.exit(0)
