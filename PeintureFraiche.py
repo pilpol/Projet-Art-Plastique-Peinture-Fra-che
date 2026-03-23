@@ -47,7 +47,7 @@ def vortex_eye():
     center_row = size.lines // 2
     center_col = size.columns // 2
 
-    # spirale
+    # spirale trop har
     for t in range(60):
         angle = t * 0.3
         radius = t * 0.25
@@ -60,7 +60,7 @@ def vortex_eye():
 
         time.sleep(0.01)
 
-    # apparition de l'œil
+    # apparition du visage que j'ai appelé oeuil ????? tf ?
     start_row = center_row - len(eye_ascii)//2
     start_col = center_col - len(eye_ascii[0])//2
 
@@ -81,7 +81,7 @@ def vortex():
         row = int(center_row + math.sin(angle) * radius)
         col = int(center_col + math.cos(angle) * radius * 2)
 
-        # évite de sortir de l'écran
+        # faire en sorte que le texte évite de sortir de l'écran
         if 1 <= row <= size.lines and 1 <= col <= size.columns - len(text):
             print(f"\033[{row};{col}H{random_rgb()}{text}{reset}", end="", flush=True)
 
@@ -138,10 +138,10 @@ while True:
     # couleurs du texte pour faire comme de la peinture
     color = random_rgb()
 
-    # position du texte
+    # décider la position du texte
     row, col = random_position()
 
-    # apparition bizarre 
+    # les caracteres bizzares qui apparaissent dans les messages de temps en temps
     glitch = ""
     if secrets.randbelow(3) == 0:
         for _ in range(secrets.randbelow(5)+1):
@@ -150,16 +150,13 @@ while True:
     # affichage de je sais pas quoi 
     print(f"\033[{row};{col}H{color}{msg}{glitch} — {now}{reset}", end="", flush=True)
 
-    # apparition flash (fantôme) (rapide) (flash) jsp comment dire mais personne fouille dans le code source donc j'ai rien a me reprocher a faire des commentaires... hein ? vous regardez pas le code source ?
+    # apparition flash (fantôme) (rapide) (flash) jsp comment dire
     if secrets.randbelow(5) == 0:
         time.sleep(secrets.randbelow(2)/10)  # 0.0 à 0.2 sec
     else:
         time.sleep(chaotic_delay())
 
 #Bon programme je crois ? j'ai pris du temps pour faire le code j'avais jamais utilisé python comme ça, j'ai l'impression de l'avoir poussé a bout xD
-#imagine utilier les commentaires pour organiser le code et parler comme si c'etait un journal intime mdrrr j'aime bien faire ça
-#les messages sont pas pour vous. Ils sont même pas pour moi. 
-# "this is not for you" - Mark Z. Danielewski, La Maison des feuilles. J'adore ce livre
 #                                               .--.
 #                                               `.  \
 #                                                 \  \
