@@ -19,8 +19,8 @@ from datetime import datetime
 import math
 
 # === CONFIG RAHHH BOBOBOBOBO JDEVIENS FOUUUUU  ===
-message_base = ["Peinture", "Coup de pinceau"]
-messages_weird = ["Vous regardez encore ?", "Est-ce vraiment de l'art ?", "Pourquoi ?", "Peinture fraîche"]
+message_base = ["Peinture", "Coup de pinceau", "Peinture fraîche"]
+messages_weird = ["Vous regardez encore ?", "Est-ce vraiment de l'art ?", "Pourquoi ?"]
 glitch_chars = "!@#$%^&*<>?\\/|~"
 eye_ascii = [
 "        _____        ",
