@@ -60,7 +60,7 @@ def vortex_eye():
 
         time.sleep(0.01)
 
-    # apparition du visage que j'ai appelé oeuil ????? tf ?
+    # apparition du visage que j'ai appelé oeil ????? tf ?
     start_row = center_row - len(eye_ascii)//2
     start_col = center_col - len(eye_ascii[0])//2
 
