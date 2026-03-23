@@ -9,7 +9,7 @@
 #|  ___|  _ \    / \  |_ _/ ___| | | | ____|    
 #| |_  | |_) |  / _ \  | | |   | |_| |  _|      
 #|  _| |  _ <  / ___ \ | | |___|  _  | |___     
-#|_|   |_| \/_/   \_\___\____|_| |_|_____||    
+#|_|   |_| \/_/   \_\___\____|_| |_|_____|
 
 
 import os
@@ -76,7 +76,7 @@ def vortex_eye():
 
             # Vérification des limites
             if 1 <= row <= size.lines and 1 <= col <= size.columns:
-                print(f"\033[{row};{col}H{{random_rgb()}}◉{{reset}}", end="", flush=True)
+                print(f"\033[{row};{col}H{random_rgb()}◉{reset}", end="", flush=True)
 
             time.sleep(0.01)
 
@@ -86,7 +86,7 @@ def vortex_eye():
 
         for i, line in enumerate(eye_ascii):
             if start_row + i <= size.lines:
-                print(f"\033[{start_row+i};{start_col}H{{random_rgb()}}{{line}}{{reset}}", end="", flush=True)
+                print(f"\033[{start_row+i};{start_col}H{random_rgb()}{line}{reset}", end="", flush=True)
     except Exception as e:
         pass  # Silently continue on error
 
@@ -108,7 +108,7 @@ def vortex():
             # faire en sorte que le texte évite de sortir de l'écran
             if (1 <= row <= size.lines and 
                 1 <= col <= size.columns - len(text)):
-                print(f"\033[{row};{col}H{{random_rgb()}}{{text}}{{reset}}", end="", flush=True)
+                print(f"\033[{row};{col}H{random_rgb()}{text}{reset}", end="", flush=True)
 
             time.sleep(0.01)
     except Exception as e:
@@ -118,7 +118,7 @@ def random_rgb():
     r = secrets.randbelow(256)
     g = secrets.randbelow(256)
     b = secrets.randbelow(256)
-    return f"\033[38;2;{{r}};{{g}};{{b}}m"
+    return f"\033[38;2;{r};{g};{b}m"
 
 def random_position():
     try:
@@ -181,7 +181,7 @@ try:
                     glitch += secrets.choice(glitch_chars)
 
             # affichage de je sais pas quoi 
-            print(f"\033[{row};{col}H{{color}}{{msg}}{{glitch}} — {{now}}{{reset}}", end="", flush=True)
+            print(f"\033[{row};{col}H{color}{msg}{glitch} — {now}{reset}", end="", flush=True)
 
             # apparition flash (fantôme) (rapide) (flash) jsp comment dire
             if secrets.randbelow(5) == 0:
