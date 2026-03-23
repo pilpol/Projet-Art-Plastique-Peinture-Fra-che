@@ -189,38 +189,10 @@ try:
             else:
                 time.sleep(chaotic_delay())
         except Exception:
-            # Continue even if there's an error in the loop
+            # Continue meme avc erreur
             time.sleep(0.1)
 except KeyboardInterrupt:
-    # Graceful exit on Ctrl+C
+    # ct,c pour enlever
     print("\033[?25h")  # Show cursor again
-    print("\nPeinture fermée. Au revoir! 🎨")
+    print("\nPeinture finie.")
     sys.exit(0)
-
-#Bon programme je crois ? j'ai pris du temps pour faire le code j'avais jamais utilisé python comme ça, j'ai l'impression de l'avoir poussé a bout xD
-#                                               .--.
-#                                               `.  \
-#                                                 \  \
-#                                                  .  \
-#                                                  :   .
-#                                joli chat hein ?  |    .
-#                                                  |    :
-#                                                  |    |
-#  ..._  ___                                       |    |
-# `."".`''''""--..___                              |    |
-# ,-\  \             ""-...__         _____________/    |
-# / ` " '                    `"""""""                  .
-# \                                                      L
-# (>                                                      \
-#/                                                         \
-#\_    ___..---.                                            L
-#  `--'         '.                                           \
-#                 .                                           \_
-#                _/`.                                           `.._
-#             .'     -.                                             `.
-#            /     __.-Y     /''''''-...___,...--------.._            |
-#           /   _."    |    /                ' .      \   '---..._    |
-#          /   /      /    /                _,. '    ,/           |   |
-#          \_,'     _.'   /              /''     _,-'            _|   |
-#                  '     /               `-----''               /     |
-#                  `...-'                                       `...-'
