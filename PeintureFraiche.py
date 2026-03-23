@@ -9,7 +9,7 @@
 #|  ___|  _ \    / \  |_ _/ ___| | | | ____|    
 #| |_  | |_) |  / _ \  | | |   | |_| |  _|      
 #|  _| |  _ <  / ___ \ | | |___|  _  | |___     
-#|_|   |_| \\/_/   \_\___\____|_| |_|_____|    
+#|_|   |_| \/_/   \_\___\____|_| |_|_____||    
 
 
 import os
@@ -194,5 +194,5 @@ try:
 except KeyboardInterrupt:
     # ct,c pour enlever
     print("\033[?25h")  # Show cursor again
-    print("\nPeinture finie.")
+    print(f"\nPeinture finie.")
     sys.exit(0)
