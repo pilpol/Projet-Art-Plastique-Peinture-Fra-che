@@ -180,5 +180,5 @@ try:
 except KeyboardInterrupt:
     # ct,c pour enlever
     print("\033[?25h")  # remets le curseur
-    print(f"\Peinture finie.")
+    print("Peinture finie.")
     sys.exit(0)
