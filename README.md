@@ -15,4 +15,4 @@ Chaque 0.1 a 15 secondes qui passent, de la peinture (texte qui dit "Peinture" d
 d̴̞͍̈́͋̑̈̎ê̵̻̹͙͇͈̩̒̅͗̌s̴̳̍̉͑̓͝ message perturberont cette peinture
 Pour moi, les messages "perturbateurs" me permet de donner mon avis sur ce type de projets artistique, est-ce vraiment de l'art ? ou juste une répétition.
 
-/!\ il faut colorama pour que le projet affiche toute ses couleurs (c'est ecrit dans les requirements.txt)
+/!\ il faut colorama pour que le projet affiche toute les couleurs et un peu tout (c'est ecrit dans les requirements.txt)
