@@ -22,7 +22,7 @@ eye_ascii = [
 "     `-._____.-'    "]
 
 
-# === INIT TERMINAL===
+# === INITIALISER TERMINAL SI NON CODESPACE===
 def init_terminal():
     """Initialize terminal for all platforms"""
     try:
@@ -138,11 +138,11 @@ try:
         try:
             now = datetime.now().strftime("%H:%M:%S")
 
-            # vortex rare je sais même pas si il marche ?
+            # vortex rare (working)
             if secrets.randbelow(500) == 0:
                 vortex()
 
-            # vortex œil très rare donc encore plus rare que le vortex normal et je sais même pas si il marche non plus mdrrr
+            # vortex œil très rare donc encore plus rare que le vortex normal je lai eu du premier coup il marche
             if secrets.randbelow(800) == 0:
                 vortex_eye()
 
@@ -171,7 +171,7 @@ try:
 
             # apparition flash (fantôme) (rapide) (flash) jsp comment dire
             if secrets.randbelow(5) == 0:
-                time.sleep(secrets.randbelow(2)/10)  # 0.0 à 0.2 sec
+                time.sleep(secrets.randbelow(9)/10)  # 0.0 à 0.9 sec
             else:
                 time.sleep(chaotic_delay())
         except Exception:
